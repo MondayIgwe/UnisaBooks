@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="/Jquery/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="/Jquery/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script type="text/javascript" src="/main/JavaScriptLogics/ProjectTile.js"></script>
+    <title>Graph</title>
+</head>
+<body>
+    <!--New Graph page-->
+    <div data-role="page" id="pageGraph" class="test">
+        <div data-role="header">
+            <a href="#pageMenu" data-role="button" data-icon="bars" data-iconpos="left" data-inline="true">Menu</a>
+            <a href="#pageAbout" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">Info</a>
+            <h1>Analyze</h1>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">TSH vs Date</h3>
+            </div>
+            <div class="panel-body">
+                <canvas id="GraphCanvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Drawing a cylinder function using JavaScript-->
+    <script>
+        function cylinder_drawing() {
+            var canvas = document.getElementById('canvasid');
+            var context_variable = canvas.getContext('2d');
+            var centX = 0;
+            var centY = -100;
+            var r_variable = 30;
+            context_variable.save();
+
+            context_variable.translate(canvas.width / 2, canvas.height / 2);
+            context_variable.scale(6, 1);
+            context_variable.beginPath();
+            context_variable.arc(centX, centY, r_variable, 0, 2 * Math.PI, false);
+            context_variable.restore();
+
+            context_variable.fillStyle = 'YellowGreen';
+            context_variable.fill();
+            context_variable.lineWidth = 7;
+            context_variable.strokeStyle = 'GainsBoro';
+            context_variable.stroke();
+            context_variable.save();
+
+            context_variable.translate(canvas.width / 2, canvas.height / 2);
+            context_variable.scale(6, 1);
+            context_variable.beginPath();
+            context_variable.arc(centX, 100, r_variable, 0, 2 * Math.PI, false);
+            context_variable.restore();
+            context_variable.fillStyle = 'MediumSlateBlue';
+            context_variable.fill();
+            context_variable.lineWidth = 7;
+            context_variable.strokeStyle = 'GainsBoro';
+            context_variable.stroke();
+            context_variable.save();
+
+            context_variable.beginPath();
+            context_variable.lineWidth = 3;
+            context_variable.strokeStyle = "rgba(0,0,0)";
+            context_variable.moveTo(80, 100);
+            context_variable.lineTo(80, 320);
+            context_variable.moveTo(420, 95);
+            context_variable.lineTo(420, 325);
+            context_variable.stroke();
+            context_variable.translate(canvas.width / 2, canvas.height / 2);
+            context_variable.scale(6, 1);
+            context_variable.beginPath();
+            context_variable.arc(centX, centY + 2, r_variable + 0.8, 0, Math.PI, false);
+            context_variable.restore();
+            context_variable.lineWidth = 4;
+            context_variable.strokeStyle = "rgba(0,0,0)";
+            context_variable.stroke();
+            context_variable.save();
+
+            context_variable.translate(canvas.width / 2, canvas.height / 2);
+            context_variable.scale(6, 1);
+            context_variable.beginPath();
+            context_variable.arc(centX, 100 + 2, r_variable + 0.8, 0, Math.PI, false);
+            context_variable.restore();
+            context_variable.lineWidth = 4;
+            context_variable.strokeStyle = "rgba(0,0,0)"
+
+            context_variable.stroke();
+
+        }
+    </script>
+    <title>5.1 Draw the following figure of a cylinder on a canvas</title>
+</head>
+
+<body onload="cylinder_drawing()">
+    <canvas id="canvasid" height="400" width="500" />
+</body>
+
+</html>

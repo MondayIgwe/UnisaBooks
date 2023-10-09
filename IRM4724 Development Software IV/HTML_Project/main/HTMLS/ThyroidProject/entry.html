@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="/Jquery/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="/Jquery/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script type="text/javascript" src="/main/JavaScriptLogics/ProjectTile.js"></script>
+    <title>Entry Page</title>
+</head>
+
+<body>
+    <div data-role="page" id="pageHome">
+        <div data-role="header">
+            <h1>Thyroid Cancer App</h1>
+        </div>
+        <div data-role="content">
+            Password: <input type="password" id="passcode"></input>
+            <div data-role="controlgroup" id="numKeypad">
+                <a data-role="button" id="btnEnter" type="submit">Enter</a>
+                <a href="#pageAbout" data-role="button">About</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a data-role="button" onclick="addValueToPassword(7)">7</a>
+                <a data-role="button" onclick="addValueToPassword(8)">8</a>
+                <a data-role="button" onclick="addValueToPassword(9)">9</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a data-role="button" onclick="addValueToPassword(4)">4</a>
+                <a data-role="button" onclick="addValueToPassword(5)">5</a>
+                <a data-role="button" onclick="addValueToPassword(6)">6</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a data-role="button" onclick="addValueToPassword(3)">3</a>
+                <a data-role="button" onclick="addValueToPassword(2)">2</a>
+                <a data-role="button" onclick="addValueToPassword(1)">1</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a data-role="button" onclick="addValueToPassword(0)">0</a>
+                <a data-role="button" onclick="addValueToPassword('bksp')" 
+                data-icon="delete">del</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.js"></script>
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="/Jquery/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" src="/main/HTMLS/ProjectTile/BusinessLogics/PhysicsProjectTileApp2.js"></script>
+    <title>Physics ProjectTile App</title>
+</head>
+
+<body onload="initialize()">
+    <div data-role="page">
+        <div data-role="content">
+        <div data-role="header">Physics ProjectTile App</div>
+        <div data-role="nav">
+            <ul>
+                <li><a href="file:information.html">Information</a></li>
+                <li><a href="file:index.html" class="ui-btn-active ui-state-persist">
+                        Interface
+                    </a></li>
+            </ul>
+        </div>
+        <!--The input body goes here-->
+        <label for="angle">Angle</label>
+        <input type="number" id="angle" min="0" max="90" placeholder="In degrees">
+
+        <label for="velocity">Velocity</label>
+        <input type="number" id="velocity" min="0" max="999" placeholder="In meters/seconds">
+
+        <!--Processing - Businees Logic-->
+        <button onclick="update()">Calculate!</button>
+
+        <!--Output-->
+        <table id="data" border="1">
+            <tr>
+                <td><b>Max Height:</b></td>
+                <td id="height">0</td>
+                <td>meters</td>
+            </tr>
+            <tr>
+                <td><b>Distance Traveled:</b></td>
+                <td id="distance">0</td>
+                <td>meters</td>
+            </tr>
+        </table>
+        <div data-role="footer"><small>Cross platform mobile app</small></div>
+    </div>
+</div>
+</body>
+
+</html>

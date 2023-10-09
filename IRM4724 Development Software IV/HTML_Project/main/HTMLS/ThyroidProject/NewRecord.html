@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="/Jquery/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="/Jquery/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script type="text/javascript" src="/main/JavaScriptLogics/ProjectTile.js"></script>
+    <title>About</title>
+</head>
+<body>
+     <!--New Record page-->
+    <div data-role="page" id="pageNewRecordForm">
+    <div data-role="header">
+        <a href="#pageMenu" data-role="button" data-icon="bars" data-iconpos="left" data-inline="true">Menu</a>
+        <a href="#pageAbout" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">Info</a>
+        <h1>New Record</h1>
+    </div>
+    <div data-role="content">
+        <form id="frmNewRecordForm" action="">
+            <div data-role="fieldcontain">
+                <div data-role="fieldcontain">
+                    <label for="datExamDate">Date:</label>
+                    <input type="date" name="datExamDate" data-mini="false" id="datExamDate" value="">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="txtTSH"><abbr title="Thyrois-Stimulatin hormone">TSH (mUI/l):</abbr></label>
+                    <input type="number" step="0.1" placeholder="0" name="txtTSH" data-mini="false" id="txtTSH" value="">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="txtThyroglobulin">Thyroglobulin (Aug/L) [Optional]: </label>
+                    <input type="number" step="0.01" placeholder="0" name="txtThyroglobulin" data-mini="false" id="txtThyroglobulin" value="">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="txtSynthroidDose"><abbr title="txtSynthroidDose or Eltroxin">SynthroidDose * (Aug)</abbr></label>
+                    <input type="number" step="0.01" placeholder="0" name="SynthroidDose" data-mini="false" id="SynthroidDose" value="">
+                </div>
+                </div>
+            </div>
+            <input type="submit" id="btnSubmitRecord" value="Submit">
+        </form>
+        </div>
+        <p>&nsp;100 microgram = .0001 gram</p>
+</body>
+</html>

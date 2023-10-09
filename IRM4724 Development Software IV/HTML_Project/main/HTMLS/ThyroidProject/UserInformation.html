@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="/Jquery/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="/Jquery/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script type="text/javascript" src="/main/JavaScriptLogics/ProjectTile.js"></script>
+    <title>About</title>
+</head>
+<body>
+     <!--User Information page-->
+    <div data-role="page" id="pageUserInfo">
+    <div data-role="header">
+        <a href="#pageMenu" data-role="button" data-icon="bars" data-iconpos="left" data-inline="true">Menu</a>
+        <a href="#pageAbout" data-role="button" data-icon="bars" data-iconpos="right" data-inline="true">Info</a>
+        <h1><b></b>User Information</h1>
+    </div>
+    <div data-role="content">
+        <form id="frmUserForm" action="">
+            <div data-role="fieldcontain">
+                <label for="txtFirstName">First Name: </label>
+                <input type="text" placeholder="First Name" name="txtFirstName" data-mini="false" id="txtFirstName" value="" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="txtLastName">Last Name: </label>
+                <input type="text" placeholder="Last Name" name="txtLastName" data-mini="false" id="txtLastName" value="" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="datBirthdate">Birthdate: </label>
+                <input type="date" name="datBirthdate" data-mini="false" id="datBirthdate" value="" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="changePassword">Edit Password: </label>
+                <input type="password" placeholder="New Password" name="changePassword" data-mini="false" id="changePassword" value="" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="txtChargeNumber">Health Card Number: </label>
+                <input type="text" placeholder="Health Card Number" name="txtChargeNumber" data-mini="false" id="txtChargeNumber" value="" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="slcCancerType" class="select">Cancer Type: </label>
+                <select name="slcCancerType" id="slcCancerType" data-mini="false" data-native-menu="false" required>
+                    <option>Select Cancer Type</option>
+                    <option value="Papllary">Papillary</option>
+                    <option value="Follicular">Follicular</option>
+                    <option value="Modullary">Modullary</option>
+                    <option value="Anaplastic">Anaplastic</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="slcCancerStage" class="select">Cancer Stage: </label>
+                <select name="slcCancerStage" id="slcCancerStage" data-mini="false" data-native-menu="false" required>
+                    <option>Select Cancer Stage</option>
+                    <option value="StageOne">Stage I</option>
+                    <option value="StageTwo">Stage II</option>
+                    <option value="StageThree">Stage III</option>
+                    <option value="StageFour">Stage IV</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="slcTSHRange" class="select">Target TSH Range: </label>
+                <select name="slcTSHRange" id="slcTSHRange" data-mini="false" data-native-menu="false" required>
+                    <option>Select TSH Range</option>
+                    <option value="StageA">A: 0.01-0.1 mIU/L</option>
+                    <option value="StageB">B: 0.01-0.5 mIU/L</option>
+                    <option value="StageC">C: 0.35-2.0 mIU/L</option>
+                </select>
+            </div>
+            <input type="button" id="btnUserUdate" data-icon="check" data-iconpos="left" value="Update" data-inline="true">
+        </form>
+       
+    </div>
+     
+    </div>
+</body>
+</html>

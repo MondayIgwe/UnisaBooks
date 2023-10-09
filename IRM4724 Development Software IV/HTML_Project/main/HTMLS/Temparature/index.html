@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="/Jquery/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" src="/main/HTMLS/Temparature/AppLayerLogic/TemperatureConverter.js"></script>
+    <title>Temperature Converter</title>
+</head>
+<body onload="setup()">
+    <div data-role="page">
+        <div data-role="fieldcontain">
+            <input type="number" id="temperature" name="temperature">
+            <label id="label">&deg; F</label>
+        </div>
+        <fieldset data-role="controlgroup">
+            <legend>Convert to:</legend>
+            <input type="radio" name="units" id="farenheit" value="farenheit">
+            <label for="farenheit">Farenheit</label>
+
+            <input type="radio" name="units" id="celcius" value="celcius" checked="checked">
+            <label for="celcius">Celsius</label>
+        </fieldset>
+        <div>
+            <input type="button" value="Convert" onclick="convert()">
+        </div>
+        <p id="answer"></p>
+    </div>
+</body>
+</html>

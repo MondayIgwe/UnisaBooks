@@ -1,0 +1,9 @@
+What does the element do?
+How to construct it.
+What IS ASSOCIATED with the element, e.g <img src="">
+Element type represent a data and content (text)
+how to construct solution using the element
+What kind of data and how do we construct it
+What problem can it solve e.g img element is used to locate 
+table element helps to create a table
+and read binary image

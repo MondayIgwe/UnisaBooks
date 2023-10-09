@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Jquery/demos/js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="/Jquery/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="/Jquery/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script type="text/javascript" src="/main/JavaScriptLogics/ProjectTile.js"></script>
+    <title>About</title>
+</head>
+<body>
+     <!--Record page-->
+    <div data-role="page" id="pageRecord">
+    <div data-role="header">
+        <a href="#pageMenu" data-role="button" data-icon="bars" data-iconpos="left" data-inline="true">Menu</a>
+        <a href="#pageAbout" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">Info</a>
+        <h1>Records</h1>
+    </div>
+    <div data-role="content">
+    <!--User Informatio Section-->
+    <div data-role="fieldcontain" id="divUserSection">
+    </div>
+    <h3 align="center">History</h3>
+    <div data-role="fieldcontain">
+        <!--Record Table-->
+        <table id="tblRecords" class="ui-response table-stroke">
+        </table>
+    </div>
+    <div data-role="fieldcontain">
+        <a href="#pageNewRecordForm" id="btnAddRecord" data-role="button" data-icon="plus">Add New Entry</a>
+        <a href="#" id="btnClearHistory" data-role="button" data-icon="delete">Clear History</a>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
